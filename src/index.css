@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+}
+
 .counter{
   border: 2px solid purple;
   padding: 30px;
@@ -25,6 +29,22 @@
   margin-right: 10px;
   border: 2px solid purple;
   font-size: 20px;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-wrapper{
+  width: 100%;
 }
 
 
