@@ -6,7 +6,7 @@ import Form from './components/Form';
 import Counter from './components/Counter';
 import boxes from './boxs';
 import Box from './components/Box'
-import Form2 from './components/Form2';
+import Forms from './components/Forms';
 
 function App() {
   const [formData, setFormData ] = useState([])
@@ -55,7 +55,7 @@ function App() {
         </div>
       </section>
       <section className='margin'>
-        <Form2/>
+        <Forms/>
       </section>
     </div>
   );
