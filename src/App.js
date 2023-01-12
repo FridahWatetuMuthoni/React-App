@@ -5,9 +5,11 @@ import { useState } from 'react';
 // import Form from './components/Form';
 // import Counter from './components/Counter';
 import boxes from './boxs';
+import API from './components/API';
 // import Box from './components/Box'
 // import Forms from './components/Forms';
 import SignUp from './components/SignUp';
+
 
 function App() {
   // const [formData, setFormData ] = useState([])
@@ -62,6 +64,10 @@ function App() {
       </section>*/}
       <section className='margin' style={styles}>
         <SignUp/>
+      </section>
+
+      <section className='margin'>
+        <API/>
       </section>
       
     </div>
