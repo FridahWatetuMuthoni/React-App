@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 const Forms = () => {
+
     const [formData, setFormData] = useState({
         firstname: '',
         lastname: '',
@@ -10,7 +11,7 @@ const Forms = () => {
         employment: '',
         color:''
     })
-    console.log(formData)
+    
     const handleChange = (e) => {
         e.preventDefault()
         const{name,value,type,checked}=e.target
@@ -21,8 +22,14 @@ const Forms = () => {
             }
         }))
     }
+
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        console.log(formData)
+    }
+
     return (
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
             <label htmlFor="first_name">Enter First Name:</label>
             <input type="text" name="firstname" id="firstname" value={formData.firstname} onChange={handleChange} />
             <br />

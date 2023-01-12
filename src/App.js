@@ -1,18 +1,21 @@
-import './index.css';
-import Item from './components/Item';
-import data from './data';
+// import './index.css';
+// import Item from './components/Item';
+// import data from './data';
 import { useState } from 'react';
-import Form from './components/Form';
-import Counter from './components/Counter';
+// import Form from './components/Form';
+// import Counter from './components/Counter';
 import boxes from './boxs';
-import Box from './components/Box'
-import Forms from './components/Forms';
+// import Box from './components/Box'
+// import Forms from './components/Forms';
+import SignUp from './components/SignUp';
 
 function App() {
-  const [formData, setFormData ] = useState([])
-  console.log(formData)
+  // const [formData, setFormData ] = useState([])
   const [boxData, setBoxData] = useState(boxes) 
-  console.log(boxData)
+
+  const styles = {
+    margin:'20px',
+  }
   
   const handleClickToggle = (id) => {
     setBoxData((prev) => {
@@ -36,7 +39,7 @@ function App() {
   }
   return (
     <div className="App">
-      {data.map((item)=>{
+      {/*{data.map((item)=>{
          return (<Item key={item.id} item={item}/>)
       })}
       <section className='margin'>
@@ -56,7 +59,11 @@ function App() {
       </section>
       <section className='margin'>
         <Forms/>
+      </section>*/}
+      <section className='margin' style={styles}>
+        <SignUp/>
       </section>
+      
     </div>
   );
 }
